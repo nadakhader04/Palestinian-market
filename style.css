@@ -1,0 +1,260 @@
+:root{
+    --spanColor: rgba(158, 17, 7, 0.836);
+}
+*{
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Lateef", serif;
+}
+body{
+    color: black;
+    width: 100%;
+    height: 100vh;
+}
+.home, .newProducts h1{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(158, 17, 7, 0.541), rgba(10, 156, 5, 0.432), rgba(0, 0, 0, 0.5) , rgba(255, 255, 255, 0.315));
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    background-color: rgba(251, 253, 251, 0.452);
+}
+
+.logo{
+    font-size: 2.5rem;
+    margin-right: 4rem;
+    margin-top: 1rem;
+}
+.logo a{
+    color: black;
+}
+span{
+    color: var(--spanColor);
+    font-size: 3rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+    color: black;
+}
+
+nav ul a{
+    color:black;
+}
+
+nav ul li:hover , nav ul a:hover{
+    cursor: pointer;
+    transition: 0.3s ease; 
+    border-bottom: 2px solid var(--spanColor);
+    font-size: 2.3rem;
+    color: var(--spanColor);
+}
+
+.logo2{
+    font-size: 3rem;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    text-align: center;
+}
+
+button {
+    width: 240px;
+    background-color: rgba(251, 253, 251, 0.452);
+    color: black;
+    font-size: 2rem;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    border-radius: 2rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+button a{
+    color: black;
+}
+button:hover{
+    background-color: antiquewhite;
+    transition: 0.3s ease;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+.card img{
+    width: 20%;
+    height: auto;
+    border-radius: 90px;
+    margin-top: 3rem;
+    border: 1px solid black;
+}
+
+.card img:hover{
+    border: 2px solid var(--spanColor);
+    cursor: pointer;
+}
+
+.title{
+    font-size: 2rem;
+}
+.products {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+hr{
+    margin-top: 4rem;
+}
+
+.final{
+    margin: 4rem;
+    font-size: 1.5rem;
+}
+
+p{
+    padding-bottom: 10rem;
+}
+
+.newProducts h1{
+    padding: 2rem;
+}
+
+
+.newProducts .card{
+    font-size: 2rem;
+}
+
+
+
+
+.payment{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80%;
+    padding: 2rem;
+    margin-right: 27%;
+    background-color: rgba(0, 0, 0, 0.781);
+    height: 93vh;
+    width: 80vh;
+    box-shadow: black 4px 3px 4px;
+    border-radius: 24px;
+    display: none;
+}
+
+
+.payIcons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cardIcons img{
+    width: 30%;
+    padding: 2rem;
+    padding-right: 35%;
+    display: block;
+    align-items: center;
+    cursor: pointer;
+    /* position: absolute; */
+}
+
+.payTitle{
+    color: white;
+}
+
+
+.close{
+    background-color: red;
+    color: white;
+    width: 30x;
+    height: 30px;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close:hover{
+    background-color: black;
+}
+
+
+label{
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+input {
+    width: 90%; 
+    padding: 1rem; 
+    margin: 0.5rem ; 
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1.2rem; 
+}
+
+
+.back-to-home{
+    position: fixed;
+    left: 5%;
+    top: 20%;
+    padding: 1rem;
+    background-image: linear-gradient(to right, rgba(158, 17, 7, 0.541), rgba(10, 156, 5, 0.432), rgba(0, 0, 0, 0.5) , rgba(255, 255, 255, 0.315));
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    nav , nav ul{
+        flex-direction: column;
+        font-size: 2rem;
+        gap: 1rem;
+    }
+
+    .main h1{
+        font-size: 4rem;
+    }
+
+    .payment{
+        width: 20rem;
+        height: 57rem;
+        margin-right: 3%;
+    }
+
+    input{
+        width: 20rem;
+    }
+
+}
